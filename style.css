@@ -1,0 +1,108 @@
+html{
+    box-sizing: border-box;
+    background-color: antiquewhite;
+}
+body{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+#project{
+    min-width: 300px;
+}
+#card-1, #card-2, #card-3, #card-4, #card-5{
+    border-radius: 10px;
+    margin: 5px;
+    padding:15px;
+    box-shadow: 3px 4px 7px 0px rgba(0,0,0,0.31);
+    font-size: 13px;
+}
+h3{
+    margin: 10px 0px 15px 0;
+    font-size: 1.2rem;
+}
+p:not(.name, .verified){
+    margin-bottom: 15px;
+}
+#card-1{
+position: relative;
+background-color: hsl(263, 55%, 52%);
+color: white;
+
+}
+#card-2{
+background-color:hsl(217, 19%, 35%);
+color:white;
+
+}
+#card-3{
+background-color: white;
+color: hsl(217, 19%, 35%);
+
+}
+#card-4{
+background-color: hsl(219, 29%, 14%);
+color: white;
+
+}
+#card-5{
+background-color: white;
+color: hsl(217, 19%, 35%);
+
+}
+
+
+.identification{
+    display: flex;
+    align-items: center;
+}
+.person{
+    order:2;
+}
+.pic{
+    border-radius: 50%;
+    order: 1;
+    margin-right: 10px;
+    border: 1px solid purple;
+}
+
+p:not(.name){
+    opacity: 0.5;
+}
+.name{
+    font-weight: 600;
+}
+#qwot{
+    position: absolute;
+    right:15% ;
+    top: 0;
+    opacity: 0.4;
+}
+
+@media(min-width:600px){
+    #project {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    #left-upper, #left-bottom, #project {
+        display: flex;
+    }
+    #leftside{
+        flex-basis: 75%;
+    }
+    #card-5{
+        flex-basis: 25%;
+    }
+
+
+    #card-1{
+        flex-basis: 65%;
+    }
+    #card-2{
+        flex-basis: 35%
+    }
+    #card-3{
+        flex-basis: 35%;
+    }
+    #card-4{
+        flex-basis: 65%;
+    }
+}
